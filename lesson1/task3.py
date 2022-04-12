@@ -11,7 +11,6 @@
 ...
 100 процентов
 """
-
 percent = 1
 while percent <= 100:
     if 10 <= percent <= 20:
