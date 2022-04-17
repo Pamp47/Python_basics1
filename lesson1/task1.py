@@ -8,14 +8,6 @@ d. * в остальных случаях: <d> дн <h> час <m> мин <s> с
 """
 
 
-# duration = int(input('Enter the time in seconds: '))
-# day = duration // 60 // 60 // 24
-# hour = duration // 60 // 60 % 24
-# minutes = duration // 60 % 60
-# seconds = duration % 60
-# print(f'Дней: {day}, часов: {hour}, минут: {minutes}, секунд: {seconds}')
-
-
 def naive_realisation(duration: int):
     # total_time = str(f'Дней: {day}, часов: {hour}, минут: {minutes}, секунд: {seconds}')
     """
