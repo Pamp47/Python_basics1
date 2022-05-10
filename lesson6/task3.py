@@ -25,4 +25,3 @@ print(dict_man3)
 
 with open('FIO_hobby.txt', mode='wt', encoding='UTF-8') as FIO_hobby:
     FIO_hobby.write(str(dict_man3))
-    
