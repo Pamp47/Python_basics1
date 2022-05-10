@@ -1,6 +1,6 @@
 def initials(fio):
     fio = fio.strip().split(",")
-    return "".join([fio[0][0], fio[1][0], fio[2][0]])
+    return " ".join([fio[0][:len(fio[0])], fio[1][:len(fio[1])], fio[2][:len(fio[2])]])
 
 
 with open("users.csv", mode="rt", encoding="UTF-8") as file_fio:
@@ -22,3 +22,7 @@ else:
         fio = fio_data[idx]
         dict_man3[initials(fio)] = None
 print(dict_man3)
+
+with open('FIO_hobby.txt', mode='wt', encoding='UTF-8') as FIO_hobby:
+    FIO_hobby.write(str(dict_man3))
+    
